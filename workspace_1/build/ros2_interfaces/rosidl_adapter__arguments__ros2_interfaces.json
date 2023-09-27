@@ -1,0 +1,8 @@
+{
+  "package_name": "ros2_interfaces",
+  "non_idl_tuples": [
+    "/workspaces/template_ws/workspace_1/ros2_interfaces:msg/Num.msg",
+    "/workspaces/template_ws/workspace_1/ros2_interfaces:srv/AddTwoInts.srv",
+    "/workspaces/template_ws/workspace_1/ros2_interfaces:action/Fibonacci.action"
+  ]
+}

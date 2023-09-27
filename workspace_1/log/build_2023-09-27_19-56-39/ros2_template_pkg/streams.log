@@ -1,0 +1,68 @@
+[0.036s] Invoking command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/template_ws/workspace_1/build/ros2_template_pkg -- -j16 -l16
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target service_server[0m
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target ros2_template_node[0m
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target action_client[0m
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target action_server[0m
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target timer[0m
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target parameters[0m
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.080s] [ 11%] Built target ros2_template_node
+[0.087s] [ 77%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/fibonaaci_action_client_node.cpp.o[0m
+[0.087s] [ 77%] [32mBuilding CXX object CMakeFiles/service_server.dir/src/some_service_server_node.cpp.o[0m
+[0.087s] [ 77%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/fibonaaci_action_server_node.cpp.o[0m
+[0.088s] [ 77%] Built target parameters
+[0.088s] [ 77%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/some_service_client_node.cpp.o[0m
+[0.088s] [ 77%] Built target timer
+[0.088s] [ 77%] Built target listener
+[0.088s] [ 77%] Built target talker
+[2.874s] [ 83%] [32m[1mLinking CXX executable service_server[0m
+[2.990s] [ 83%] Built target service_server
+[3.064s] [ 88%] [32m[1mLinking CXX executable service_client[0m
+[3.186s] [ 88%] Built target service_client
+[3.268s] [ 94%] [32m[1mLinking CXX executable action_server[0m
+[3.379s] [ 94%] Built target action_server
+[3.509s] [100%] [32m[1mLinking CXX executable action_client[0m
+[3.642s] [100%] Built target action_client
+[3.650s] Invoked command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg' returned '0': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/template_ws/workspace_1/build/ros2_template_pkg -- -j16 -l16
+[3.678s] Invoking command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/template_ws/workspace_1/build/ros2_template_pkg
+[3.684s] -- Install configuration: ""
+[3.685s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/ros2_template_node
+[3.685s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/parameters
+[3.686s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/parameters" to ""
+[3.686s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/talker
+[3.687s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/talker" to ""
+[3.687s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/listener
+[3.690s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/listener" to ""
+[3.690s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/timer
+[3.691s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/timer" to ""
+[3.691s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/service_server
+[3.691s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/service_server" to ""
+[3.692s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/service_client
+[3.692s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/service_client" to ""
+[3.692s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/action_server
+[3.693s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/action_server" to ""
+[3.693s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/action_client
+[3.694s] -- Set runtime path of "/workspaces/template_ws/workspace_1/install/ros2_template_pkg/lib/ros2_template_pkg/action_client" to ""
+[3.694s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/launch
+[3.694s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/launch/template_node_launch.py
+[3.694s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/launch/params_launch.py
+[3.694s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/launch/action_launch.py
+[3.694s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/launch/all_launch.py
+[3.694s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ament_index/resource_index/package_run_dependencies/ros2_template_pkg
+[3.695s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ament_index/resource_index/parent_prefix_path/ros2_template_pkg
+[3.695s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/environment/ament_prefix_path.sh
+[3.695s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/environment/ament_prefix_path.dsv
+[3.695s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/environment/path.sh
+[3.695s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/environment/path.dsv
+[3.696s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/local_setup.bash
+[3.696s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/local_setup.sh
+[3.696s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/local_setup.zsh
+[3.696s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/local_setup.dsv
+[3.696s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/package.dsv
+[3.697s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ament_index/resource_index/packages/ros2_template_pkg
+[3.697s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/cmake/ros2_template_pkgConfig.cmake
+[3.697s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/cmake/ros2_template_pkgConfig-version.cmake
+[3.697s] -- Installing: /workspaces/template_ws/workspace_1/install/ros2_template_pkg/share/ros2_template_pkg/package.xml
+[3.699s] Invoked command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg' returned '0': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/template_ws/workspace_1/build/ros2_template_pkg

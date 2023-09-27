@@ -1,0 +1,26 @@
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:34:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/action/fibonacci.hpp: No such file or directory
+   34 | #include [01;31m[K"acfr_ros2_interfaces/action/fibonacci.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/action_server.dir/build.make:76: CMakeFiles/action_server.dir/src/fibonaaci_action_server_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/action_server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:37:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/action/fibonacci.hpp: No such file or directory
+   37 | #include [01;31m[K"acfr_ros2_interfaces/action/fibonacci.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/action_client.dir/build.make:76: CMakeFiles/action_client.dir/src/fibonaaci_action_client_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:205: CMakeFiles/action_client.dir/all] Error 2
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:35:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/srv/add_two_ints.hpp: No such file or directory
+   35 | #include [01;31m[K"acfr_ros2_interfaces/srv/add_two_ints.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/some_service_client_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/service_client.dir/all] Error 2
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:32:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/srv/add_two_ints.hpp: No such file or directory
+   32 | #include [01;31m[K"acfr_ros2_interfaces/srv/add_two_ints.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/service_server.dir/build.make:76: CMakeFiles/service_server.dir/src/some_service_server_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/service_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,560 @@
+[0.039s] Invoking command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/template_ws/workspace_1/build/ros2_template_pkg -- -j16 -l16
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target ros2_template_node[0m
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target timer[0m
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target parameters[0m
+[0.076s] [ 16%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/some_service_client_node.cpp.o[0m
+[0.076s] [ 16%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/fibonaaci_action_server_node.cpp.o[0m
+[0.077s] [ 16%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/fibonaaci_action_client_node.cpp.o[0m
+[0.077s] [ 22%] [32mBuilding CXX object CMakeFiles/service_server.dir/src/some_service_server_node.cpp.o[0m
+[0.078s] [ 27%] [32mBuilding CXX object CMakeFiles/ros2_template_node.dir/src/ros2_template_node.cpp.o[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener_node.cpp.o[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/timer.dir/src/timer_node.cpp.o[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker_node.cpp.o[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/parameters.dir/src/parameters_node.cpp.o[0m
+[0.287s] [ 55%] [32m[1mLinking CXX executable ros2_template_node[0m
+[0.405s] [ 55%] Built target ros2_template_node
+[2.864s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.864s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:20:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[2.864s]    20 |   rclcpp::Client<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts>::SharedPtr client =
+[2.865s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.865s]       |                  [32m[Kros2_interfaces[m[K
+[2.865s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:20:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.865s]    20 |   rclcpp::Client<acfr_ros2_interfaces::srv::AddTwoInts[01;31m[K>[m[K::SharedPtr client =
+[2.865s]       |                                                       [01;31m[K^[m[K
+[2.865s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:20:68:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[Kclient[m[K’
+[2.865s]    20 |   rclcpp::Client<acfr_ros2_interfaces::srv::AddTwoInts>::SharedPtr [01;31m[Kclient[m[K =
+[2.865s]       |                                                                    [01;31m[K^~~~~~[m[K
+[2.865s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:23:23:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.865s]    23 |   auto request = std::[01;31m[Kmake_shared<acfr_ros2_interfaces::srv::AddTwoInts::Request>[m[K();
+[2.865s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.865s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:23:82:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<acfr_ros2_interfaces>()[m[K’
+[2.866s]    23 |   auto request = [01;31m[Kstd::make_shared<acfr_ros2_interfaces::srv::AddTwoInts::Request>()[m[K;
+[2.866s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.866s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[2.866s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:3[m[K:
+[2.866s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[2.866s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[2.866s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.866s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.868s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:27:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[2.868s]    27 |   while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+[2.868s]       |           [01;31m[K^~~~~~[m[K
+[2.874s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:37:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[2.874s]    37 |   auto result = [01;31m[Kclient[m[K->async_send_request(request);
+[2.874s]       |                 [01;31m[K^~~~~~[m[K
+[3.133s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:15:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ does not name a type
+[3.133s]    15 |   using Fibonacci = [01;31m[Kacfr_ros2_interfaces[m[K::action::Fibonacci;
+[3.133s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.134s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:16:63:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.134s]    16 |   using GoalHandleFibonacci = rclcpp_action::ClientGoalHandle<[01;31m[KFibonacci[m[K>;
+[3.134s]       |                                                               [01;31m[K^~~~~~~~~[m[K
+[3.134s]       |                                                               [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.135s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.135s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:8[m[K:
+[3.135s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.135s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.135s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.135s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:16:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.135s]    16 |   using GoalHandleFibonacci = rclcpp_action::ClientGoalHandle<Fibonacci[01;31m[K>[m[K;
+[3.135s]       |                                                                        [01;31m[K^[m[K
+[3.136s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:72:25:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.136s]    72 |   rclcpp_action::Client<[01;31m[KFibonacci[m[K>::SharedPtr client_ptr_;
+[3.136s]       |                         [01;31m[K^~~~~~~~~[m[K
+[3.136s]       |                         [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.136s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.136s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:8[m[K:
+[3.136s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.136s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.136s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.136s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:72:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.137s]    72 |   rclcpp_action::Client<Fibonacci[01;31m[K>[m[K::SharedPtr client_ptr_;
+[3.137s]       |                                  [01;31m[K^[m[K
+[3.137s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:72:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.137s]    72 |   rclcpp_action::Client<Fibonacci>::[01;31m[KSharedPtr[m[K client_ptr_;
+[3.137s]       |                                     [01;31m[K^~~~~~~~~[m[K
+[3.137s]       |                                              [32m[K;[m[K
+[3.139s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:72:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_ptr_[m[K’ does not name a type
+[3.139s]    72 |   rclcpp_action::Client<Fibonacci>::SharedPtr [01;31m[Kclient_ptr_[m[K;
+[3.140s]       |                                               [01;31m[K^~~~~~~~~~~[m[K
+[3.140s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:76:31:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleFibonacci[m[K’ has not been declared
+[3.140s]    76 |   void goal_response_callback([01;31m[KGoalHandleFibonacci[m[K::SharedPtr goal_handle)
+[3.140s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.140s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:76:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kgoal_handle[m[K’
+[3.140s]    76 |   void goal_response_callback(GoalHandleFibonacci::SharedPtr [01;31m[Kgoal_handle[m[K)
+[3.140s]       |                                                              [01;31m[K^~~~~~~~~~~[m[K
+[3.140s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleFibonacci[m[K’ has not been declared
+[3.141s]    86 |     [01;31m[KGoalHandleFibonacci[m[K::SharedPtr,
+[3.141s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.141s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:42:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.141s]    87 |     const std::shared_ptr<const Fibonacci[01;31m[K::[m[KFeedback> feedback)
+[3.141s]       |                                          [01;31m[K^~[m[K
+[3.141s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.141s]    87 |     const std::shared_ptr<const Fibonacci::Feedback[01;31m[K>[m[K feedback)
+[3.141s]       |                                                    [01;31m[K^[m[K
+[3.141s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:42:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.141s]    87 |     const std::shared_ptr<const Fibonacci[01;31m[K::[m[KFeedback> feedback)
+[3.141s]       |                                          [01;31m[K^~[m[K
+[3.141s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.141s]    87 |     const std::shared_ptr<const Fibonacci::Feedback[01;31m[K>[m[K feedback)
+[3.142s]       |                                                    [01;31m[K^[m[K
+[3.142s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:42:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.142s]    87 |     const std::shared_ptr<const Fibonacci[01;31m[K::[m[KFeedback> feedback)
+[3.142s]       |                                          [01;31m[K^~[m[K
+[3.142s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.142s]    87 |     const std::shared_ptr<const Fibonacci::Feedback[01;31m[K>[m[K feedback)
+[3.142s]       |                                                    [01;31m[K^[m[K
+[3.142s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:11:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.142s]    87 |     const [01;31m[Kstd[m[K::shared_ptr<const Fibonacci::Feedback> feedback)
+[3.142s]       |           [01;31m[K^~~[m[K
+[3.142s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:42:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.142s]    87 |     const std::shared_ptr<const Fibonacci[01;31m[K::[m[KFeedback> feedback)
+[3.142s]       |                                          [01;31m[K^~[m[K
+[3.142s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[3.142s]    87 |     const std::shared_ptr<[01;31m[Kconst[m[K Fibonacci::Feedback> feedback)
+[3.143s]       |                           [01;31m[K^~~~~[m[K
+[3.143s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[3.143s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:87:5:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[3.143s]    87 |     [01;31m[Kconst[m[K std::shared_ptr<const Fibonacci::Feedback> feedback)
+[3.143s]       |     [01;31m[K^~~~~[m[K
+[3.145s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:95:30:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleFibonacci[m[K’ does not name a type
+[3.145s]    95 |   void result_callback(const [01;31m[KGoalHandleFibonacci[m[K::WrappedResult & result)
+[3.145s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.146s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:95:65:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[3.146s]    95 |   void result_callback(const GoalHandleFibonacci::WrappedResult [01;31m[K&[m[K result)
+[3.146s]       |                                                                 [01;31m[K^[m[K
+[3.146s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:95:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[3.146s]    95 |   void result_callback[34m[K([m[Kconst GoalHandleFibonacci::WrappedResult[01;31m[K [m[K[32m[K&[m[K result)
+[3.146s]       |                       [34m[K~[m[K                                        [01;31m[K^[m[K[32m[K~[m[K
+[3.146s]       |                                                                [32m[K)[m[K
+[3.146s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:95:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.146s]    95 |   void result_callback(const GoalHandleFibonacci::WrappedResult [01;31m[K&[m[K result)
+[3.146s]       |                                                                 [01;31m[K^[m[K
+[3.147s]       |                                                                  [32m[K;[m[K
+[3.148s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:95:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ does not name a type
+[3.148s]    95 |   void result_callback(const GoalHandleFibonacci::WrappedResult & [01;31m[Kresult[m[K)
+[3.148s]       |                                                                   [01;31m[K^~~~~~[m[K
+[3.149s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:[m[K In constructor ‘[01m[KMinimalActionClient::MinimalActionClient(const rclcpp::NodeOptions&)[m[K’:
+[3.149s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:21:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MinimalActionClient[m[K’ has no member named ‘[01m[Kclient_ptr_[m[K’
+[3.150s]    21 |     this->[01;31m[Kclient_ptr_[m[K = rclcpp_action::create_client<Fibonacci>(
+[3.150s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[3.150s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:21:54:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.151s]    21 |     this->client_ptr_ = rclcpp_action::create_client<[01;31m[KFibonacci[m[K>(
+[3.151s]       |                                                      [01;31m[K^~~~~~~~~[m[K
+[3.151s]       |                                                      [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.151s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.151s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:8[m[K:
+[3.151s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.151s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.151s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.152s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:21:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_client<<expression error> >(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeGraphInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const char [10])[m[K’
+[3.152s]    21 |     this->client_ptr_ = [01;31m[Krclcpp_action::create_client<Fibonacci>([m[K
+[3.152s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.152s]    22 | [01;31m[K      this->get_node_base_interface(),[m[K
+[3.152s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          
+[3.152s]    23 | [01;31m[K      this->get_node_graph_interface(),[m[K
+[3.152s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[3.152s]    24 | [01;31m[K      this->get_node_logging_interface(),[m[K
+[3.152s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+[3.152s]    25 | [01;31m[K      this->get_node_waitables_interface(),[m[K
+[3.152s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     
+[3.153s]    26 | [01;31m[K      "fibonacci")[m[K;
+[3.153s]       |       [01;31m[K~~~~~~~~~~~~[m[K                                              
+[3.153s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+[3.153s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:10[m[K:
+[3.153s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::create_client(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeGraphInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+[3.153s]    44 | [01;36m[Kcreate_client[m[K(
+[3.153s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[3.153s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.153s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:21:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.153s]    21 |     this->client_ptr_ = [01;31m[Krclcpp_action::create_client<Fibonacci>([m[K
+[3.154s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.154s]    22 | [01;31m[K      this->get_node_base_interface(),[m[K
+[3.154s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          
+[3.154s]    23 | [01;31m[K      this->get_node_graph_interface(),[m[K
+[3.154s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[3.154s]    24 | [01;31m[K      this->get_node_logging_interface(),[m[K
+[3.154s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+[3.154s]    25 | [01;31m[K      this->get_node_waitables_interface(),[m[K
+[3.154s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     
+[3.154s]    26 | [01;31m[K      "fibonacci")[m[K;
+[3.154s]       |       [01;31m[K~~~~~~~~~~~~[m[K                                              
+[3.155s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+[3.155s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:10[m[K:
+[3.155s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::create_client(NodeT, const string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+[3.155s]   105 | [01;36m[Kcreate_client[m[K(
+[3.155s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[3.155s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.155s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:21:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.155s]    21 |     this->client_ptr_ = [01;31m[Krclcpp_action::create_client<Fibonacci>([m[K
+[3.155s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.155s]    22 | [01;31m[K      this->get_node_base_interface(),[m[K
+[3.156s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          
+[3.156s]    23 | [01;31m[K      this->get_node_graph_interface(),[m[K
+[3.156s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[3.156s]    24 | [01;31m[K      this->get_node_logging_interface(),[m[K
+[3.156s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+[3.156s]    25 | [01;31m[K      this->get_node_waitables_interface(),[m[K
+[3.156s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     
+[3.156s]    26 | [01;31m[K      "fibonacci")[m[K;
+[3.156s]       |       [01;31m[K~~~~~~~~~~~~[m[K                                              
+[3.158s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:12:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ does not name a type
+[3.158s]    12 |   using Fibonacci = [01;31m[Kacfr_ros2_interfaces[m[K::action::Fibonacci;
+[3.159s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.159s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:13:63:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.160s]    13 |   using GoalHandleFibonacci = rclcpp_action::ServerGoalHandle<[01;31m[KFibonacci[m[K>;
+[3.160s]       |                                                               [01;31m[K^~~~~~~~~[m[K
+[3.160s]       |                                                               [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.160s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.160s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:5[m[K:
+[3.160s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.160s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.160s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.160s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:13:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.160s]    13 |   using GoalHandleFibonacci = rclcpp_action::ServerGoalHandle<Fibonacci[01;31m[K>[m[K;
+[3.161s]       |                                                                        [01;31m[K^[m[K
+[3.161s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:32:25:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.161s]    32 |   rclcpp_action::Server<[01;31m[KFibonacci[m[K>::SharedPtr action_server_;
+[3.161s]       |                         [01;31m[K^~~~~~~~~[m[K
+[3.161s]       |                         [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.161s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.161s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:5[m[K:
+[3.161s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.161s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.161s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.161s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:32:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.161s]    32 |   rclcpp_action::Server<Fibonacci[01;31m[K>[m[K::SharedPtr action_server_;
+[3.161s]       |                                  [01;31m[K^[m[K
+[3.162s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:32:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.162s]    32 |   rclcpp_action::Server<Fibonacci>::[01;31m[KSharedPtr[m[K action_server_;
+[3.162s]       |                                     [01;31m[K^~~~~~~~~[m[K
+[3.162s]       |                                              [32m[K;[m[K
+[3.164s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:32:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ does not name a type; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+[3.164s]    32 |   rclcpp_action::Server<Fibonacci>::SharedPtr [01;31m[Kaction_server_[m[K;
+[3.164s]       |                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.164s]       |                                               [32m[Krcl_action_server_t[m[K
+[3.164s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:36:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.164s]    36 |     std::shared_ptr<const Fibonacci[01;31m[K::[m[KGoal> goal)
+[3.164s]       |                                    [01;31m[K^~[m[K
+[3.165s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.165s]    36 |     std::shared_ptr<const Fibonacci::Goal[01;31m[K>[m[K goal)
+[3.165s]       |                                          [01;31m[K^[m[K
+[3.165s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:36:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.165s]    36 |     std::shared_ptr<const Fibonacci[01;31m[K::[m[KGoal> goal)
+[3.165s]       |                                    [01;31m[K^~[m[K
+[3.165s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.165s]    36 |     std::shared_ptr<const Fibonacci::Goal[01;31m[K>[m[K goal)
+[3.165s]       |                                          [01;31m[K^[m[K
+[3.165s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:36:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.166s]    36 |     std::shared_ptr<const Fibonacci[01;31m[K::[m[KGoal> goal)
+[3.166s]       |                                    [01;31m[K^~[m[K
+[3.166s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.166s]    36 |     std::shared_ptr<const Fibonacci::Goal[01;31m[K>[m[K goal)
+[3.166s]       |                                          [01;31m[K^[m[K
+[3.166s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:5:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.166s]    36 |     [01;31m[Kstd[m[K::shared_ptr<const Fibonacci::Goal> goal)
+[3.166s]       |     [01;31m[K^~~[m[K
+[3.166s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:36:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.166s]    36 |     std::shared_ptr<const Fibonacci[01;31m[K::[m[KGoal> goal)
+[3.167s]       |                                    [01;31m[K^~[m[K
+[3.167s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[3.167s]    36 |     std::shared_ptr<[01;31m[Kconst[m[K Fibonacci::Goal> goal)
+[3.167s]       |                     [01;31m[K^~~~~[m[K
+[3.167s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[3.167s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:36:5:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[3.167s]    36 |     [01;31m[Kstd[m[K::shared_ptr<const Fibonacci::Goal> goal)
+[3.167s]       |     [01;31m[K^~~[m[K
+[3.167s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:[m[K In member function ‘[01m[Kvoid MinimalActionClient::send_goal()[m[K’:
+[3.168s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:46:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MinimalActionClient[m[K’ has no member named ‘[01m[Kclient_ptr_[m[K’
+[3.168s]    46 |     if (!this->[01;31m[Kclient_ptr_[m[K) {
+[3.168s]       |                [01;31m[K^~~~~~~~~~~[m[K
+[3.168s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:50:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MinimalActionClient[m[K’ has no member named ‘[01m[Kclient_ptr_[m[K’
+[3.168s]    50 |     if (!this->[01;31m[Kclient_ptr_[m[K->wait_for_action_server(std::chrono::seconds(10))) {
+[3.168s]       |                [01;31m[K^~~~~~~~~~~[m[K
+[3.168s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:56:21:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ has not been declared
+[3.168s]    56 |     auto goal_msg = [01;31m[KFibonacci[m[K::Goal();
+[3.168s]       |                     [01;31m[K^~~~~~~~~[m[K
+[3.169s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:61:52:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.169s]    61 |     auto send_goal_options = rclcpp_action::Client<[01;31m[KFibonacci[m[K>::SendGoalOptions();
+[3.170s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[3.170s]       |                                                    [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.170s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.170s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:8[m[K:
+[3.170s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.170s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.170s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.170s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:61:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.170s]    61 |     auto send_goal_options = rclcpp_action::Client<Fibonacci[01;31m[K>[m[K::SendGoalOptions();
+[3.170s]       |                                                             [01;31m[K^[m[K
+[3.173s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:48:27:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleFibonacci[m[K’ was not declared in this scope
+[3.174s]    48 |     const std::shared_ptr<[01;31m[KGoalHandleFibonacci[m[K> goal_handle)
+[3.174s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.174s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:48:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.174s]    48 |     const std::shared_ptr<GoalHandleFibonacci[01;31m[K>[m[K goal_handle)
+[3.174s]       |                                              [01;31m[K^[m[K
+[3.182s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:55:38:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleFibonacci[m[K’ was not declared in this scope
+[3.182s]    55 |   void execute(const std::shared_ptr<[01;31m[KGoalHandleFibonacci[m[K> goal_handle)
+[3.182s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.183s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:55:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.183s]    55 |   void execute(const std::shared_ptr<GoalHandleFibonacci[01;31m[K>[m[K goal_handle)
+[3.183s]       |                                                         [01;31m[K^[m[K
+[3.183s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:68:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MinimalActionClient[m[K’ has no member named ‘[01m[Kclient_ptr_[m[K’
+[3.183s]    68 |     auto goal_handle_future = this->[01;31m[Kclient_ptr_[m[K->async_send_goal(goal_msg, send_goal_options);
+[3.183s]       |                                     [01;31m[K^~~~~~~~~~~[m[K
+[3.192s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:91:46:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleFibonacci[m[K’ was not declared in this scope
+[3.193s]    91 |   void handle_accepted(const std::shared_ptr<[01;31m[KGoalHandleFibonacci[m[K> goal_handle)
+[3.193s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.193s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:91:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.193s]    91 |   void handle_accepted(const std::shared_ptr<GoalHandleFibonacci[01;31m[K>[m[K goal_handle)
+[3.193s]       |                                                                 [01;31m[K^[m[K
+[3.193s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:[m[K In constructor ‘[01m[KMinimalActionServer::MinimalActionServer(const rclcpp::NodeOptions&)[m[K’:
+[3.194s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:20:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MinimalActionServer[m[K’ has no member named ‘[01m[Kaction_server_[m[K’
+[3.194s]    20 |     this->[01;31m[Kaction_server_[m[K = rclcpp_action::create_server<Fibonacci>(
+[3.194s]       |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.194s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:[m[K In member function ‘[01m[Kvoid MinimalActionClient::goal_response_callback(int)[m[K’:
+[3.194s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:78:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+[3.194s]    78 |     if (![01;31m[Kgoal_handle[m[K) {
+[3.194s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[3.195s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:20:57:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.195s]    20 |     this->action_server_ = rclcpp_action::create_server<[01;31m[KFibonacci[m[K>(
+[3.195s]       |                                                         [01;31m[K^~~~~~~~~[m[K
+[3.195s]       |                                                         [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.195s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.195s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:5[m[K:
+[3.195s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.195s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.195s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.196s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:76:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSharedPtr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.196s]    76 |   void goal_response_callback([01;35m[KGoalHandleFibonacci::SharedPtr[m[K goal_handle)
+[3.196s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[3.205s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.205s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.205s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.206s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:9[m[K:
+[3.206s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:[m[K In member function ‘[01m[Kvoid MinimalActionClient::feedback_callback(...)[m[K’:
+[3.207s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:92:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback[m[K’ was not declared in this scope
+[3.207s]    92 |       [01;31m[Kfeedback[m[K->sequence.back());
+[3.207s]       |       [01;31m[K^~~~~~~~[m[K
+[3.207s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:86:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSharedPtr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.207s]    86 |     [01;35m[KGoalHandleFibonacci::SharedPtr[m[K,
+[3.207s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[3.209s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:20:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<<expression error> >(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const char [10], std::_Bind_helper<false, rclcpp_action::GoalResponse (MinimalActionServer::*)(...), MinimalActionServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (MinimalActionServer::*)(int), MinimalActionServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (MinimalActionServer::*)(int), MinimalActionServer*, const std::_Placeholder<1>&>::type)[m[K’
+[3.210s]    20 |     this->action_server_ = [01;31m[Krclcpp_action::create_server<Fibonacci>([m[K
+[3.210s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.210s]    21 | [01;31m[K      this->get_node_base_interface(),[m[K
+[3.210s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                             
+[3.210s]    22 | [01;31m[K      this->get_node_clock_interface(),[m[K
+[3.210s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                            
+[3.210s]    23 | [01;31m[K      this->get_node_logging_interface(),[m[K
+[3.210s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          
+[3.210s]    24 | [01;31m[K      this->get_node_waitables_interface(),[m[K
+[3.210s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+[3.210s]    25 | [01;31m[K      "fibonacci",[m[K
+[3.210s]       |       [01;31m[K~~~~~~~~~~~~[m[K                                                 
+[3.211s]    26 | [01;31m[K      std::bind(&MinimalActionServer::handle_goal, this, _1, _2),[m[K
+[3.211s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[3.211s]    27 | [01;31m[K      std::bind(&MinimalActionServer::handle_cancel, this, _1),[m[K
+[3.211s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    
+[3.211s]    28 | [01;31m[K      std::bind(&MinimalActionServer::handle_accepted, this, _1))[m[K;
+[3.211s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[3.211s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+[3.211s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:7[m[K:
+[3.211s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[3.211s]    58 | [01;36m[Kcreate_server[m[K(
+[3.212s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[3.212s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.212s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:20:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.212s]    20 |     this->action_server_ = [01;31m[Krclcpp_action::create_server<Fibonacci>([m[K
+[3.212s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.212s]    21 | [01;31m[K      this->get_node_base_interface(),[m[K
+[3.212s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                             
+[3.212s]    22 | [01;31m[K      this->get_node_clock_interface(),[m[K
+[3.212s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                            
+[3.212s]    23 | [01;31m[K      this->get_node_logging_interface(),[m[K
+[3.212s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          
+[3.212s]    24 | [01;31m[K      this->get_node_waitables_interface(),[m[K
+[3.212s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+[3.212s]    25 | [01;31m[K      "fibonacci",[m[K
+[3.212s]       |       [01;31m[K~~~~~~~~~~~~[m[K                                                 
+[3.212s]    26 | [01;31m[K      std::bind(&MinimalActionServer::handle_goal, this, _1, _2),[m[K
+[3.213s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[3.213s]    27 | [01;31m[K      std::bind(&MinimalActionServer::handle_cancel, this, _1),[m[K
+[3.213s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    
+[3.213s]    28 | [01;31m[K      std::bind(&MinimalActionServer::handle_accepted, this, _1))[m[K;
+[3.213s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[3.213s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+[3.213s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:7[m[K:
+[3.213s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[3.213s]   132 | [01;36m[Kcreate_server[m[K(
+[3.213s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[3.213s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.213s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:20:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.213s]    20 |     this->action_server_ = [01;31m[Krclcpp_action::create_server<Fibonacci>([m[K
+[3.213s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[3.213s]    21 | [01;31m[K      this->get_node_base_interface(),[m[K
+[3.213s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                             
+[3.213s]    22 | [01;31m[K      this->get_node_clock_interface(),[m[K
+[3.213s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                            
+[3.213s]    23 | [01;31m[K      this->get_node_logging_interface(),[m[K
+[3.213s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          
+[3.214s]    24 | [01;31m[K      this->get_node_waitables_interface(),[m[K
+[3.214s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+[3.214s]    25 | [01;31m[K      "fibonacci",[m[K
+[3.214s]       |       [01;31m[K~~~~~~~~~~~~[m[K                                                 
+[3.214s]    26 | [01;31m[K      std::bind(&MinimalActionServer::handle_goal, this, _1, _2),[m[K
+[3.214s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[3.214s]    27 | [01;31m[K      std::bind(&MinimalActionServer::handle_cancel, this, _1),[m[K
+[3.214s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    
+[3.214s]    28 | [01;31m[K      std::bind(&MinimalActionServer::handle_accepted, this, _1))[m[K;
+[3.214s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[3.217s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.218s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:6[m[K:
+[3.219s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MinimalActionServer::handle_goal(...)[m[K’:
+[3.219s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:38:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+[3.219s]    38 |     RCLCPP_INFO(this->get_logger(), "Received goal request with order %d", [01;31m[Kgoal[m[K->order);
+[3.219s]       |                                                                            [01;31m[K^~~~[m[K
+[3.224s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:41:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+[3.224s]    41 |     if ([01;31m[Kgoal[m[K->order > 9000) {
+[3.224s]       |         [01;31m[K^~~~[m[K
+[3.225s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:[m[K In member function ‘[01m[Kvoid MinimalActionServer::execute(int)[m[K’:
+[3.225s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:59:34:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[3.225s]    59 |     const auto goal = goal_handle[01;31m[K->[m[Kget_goal();
+[3.225s]       |                                  [01;31m[K^~[m[K
+[3.226s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:60:38:[m[K [01;31m[Kerror: [m[K‘[01m[KFibonacci[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces::action::Fibonacci[m[K’?
+[3.226s]    60 |     auto feedback = std::make_shared<[01;31m[KFibonacci[m[K::Feedback>();
+[3.227s]       |                                      [01;31m[K^~~~~~~~~[m[K
+[3.227s]       |                                      [32m[Kros2_interfaces::action::Fibonacci[m[K
+[3.227s] In file included from [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/fibonacci.hpp:7[m[K,
+[3.227s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:5[m[K:
+[3.227s] [01m[K/workspaces/template_ws/workspace_1/install/ros2_interfaces/include/ros2_interfaces/ros2_interfaces/action/detail/fibonacci__struct.hpp:1041:26:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_interfaces::action::Fibonacci[m[K’ declared here
+[3.227s]  1041 | typedef struct Fibonacci [01;36m[KFibonacci[m[K;
+[3.227s]       |                          [01;36m[K^~~~~~~~~[m[K
+[3.227s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:60:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[3.227s]    60 |     auto feedback = std::[01;31m[Kmake_shared<Fibonacci::Feedback>[m[K();
+[3.227s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.227s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:60:58:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[3.227s]    60 |     auto feedback = [01;31m[Kstd::make_shared<Fibonacci::Feedback>()[m[K;
+[3.228s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[3.228s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.228s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:2[m[K:
+[3.228s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[3.228s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[3.228s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[3.228s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.228s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:60:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.228s]    60 |     auto feedback = [01;31m[Kstd::make_shared<Fibonacci::Feedback>()[m[K;
+[3.228s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[3.228s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:64:24:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[3.228s]    64 |     auto result = std::[01;31m[Kmake_shared<Fibonacci::Result>[m[K();
+[3.228s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.228s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:64:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<Fibonacci>()[m[K’
+[3.228s]    64 |     auto result = [01;31m[Kstd::make_shared<Fibonacci::Result>()[m[K;
+[3.228s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[3.228s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[3.228s]                  from [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:2[m[K:
+[3.228s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[3.228s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[3.229s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[3.229s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.229s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:68:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[3.229s]    68 |       if (goal_handle[01;31m[K->[m[Kis_canceling()) {
+[3.229s]       |                      [01;31m[K^~[m[K
+[3.229s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:70:20:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[3.229s]    70 |         goal_handle[01;31m[K->[m[Kcanceled(result);
+[3.229s]       |                    [01;31m[K^~[m[K
+[3.229s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:77:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[3.229s]    77 |       goal_handle[01;31m[K->[m[Kpublish_feedback(feedback);
+[3.229s]       |                  [01;31m[K^~[m[K
+[3.229s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:86:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[3.229s]    86 |       goal_handle[01;31m[K->[m[Ksucceed(result);
+[3.229s]       |                  [01;31m[K^~[m[K
+[3.229s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[3.229s]     7 |   const std::shared_ptr<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts::Request> request,
+[3.229s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.229s]       |                         [32m[Kros2_interfaces[m[K
+[3.229s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.230s]     7 |   const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request[01;31m[K>[m[K request,
+[3.230s]       |                                                                       [01;31m[K^[m[K
+[3.235s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[3.235s]     7 |   const std::shared_ptr<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts::Request> request,
+[3.235s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.235s]       |                         [32m[Kros2_interfaces[m[K
+[3.235s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.235s]     7 |   const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request[01;31m[K>[m[K request,
+[3.236s]       |                                                                       [01;31m[K^[m[K
+[3.241s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[3.241s]     7 |   const std::shared_ptr<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts::Request> request,
+[3.241s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.241s]       |                         [32m[Kros2_interfaces[m[K
+[3.241s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.242s]     7 |   const std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request[01;31m[K>[m[K request,
+[3.242s]       |                                                                       [01;31m[K^[m[K
+[3.242s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:9:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.242s]     7 |   const [01;31m[Kstd[m[K::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> request,
+[3.242s]       |         [01;31m[K^~~[m[K
+[3.248s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[3.248s]     7 |   const std::shared_ptr<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts::Request> request,
+[3.248s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.248s]       |                         [32m[Kros2_interfaces[m[K
+[3.248s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:6:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kadd[m[K’ declared void
+[3.248s]     6 | void [01;31m[Kadd[m[K(
+[3.248s]       |      [01;31m[K^~~[m[K
+[3.248s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:7:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[3.248s]     7 |   [01;31m[Kconst[m[K std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Request> request,
+[3.248s]       |   [01;31m[K^~~~~[m[K
+[3.254s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:8:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[3.254s]     8 |   std::shared_ptr<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts::Response> response)
+[3.254s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.254s]       |                   [32m[Kros2_interfaces[m[K
+[3.254s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:8:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.254s]     8 |   std::shared_ptr<acfr_ros2_interfaces::srv::AddTwoInts::Response[01;31m[K>[m[K response)
+[3.254s]       |                                                                  [01;31m[K^[m[K
+[3.260s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.261s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:25:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kacfr_ros2_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_interfaces[m[K’?
+[3.261s]    25 |   rclcpp::Service<[01;31m[Kacfr_ros2_interfaces[m[K::srv::AddTwoInts>::SharedPtr service =
+[3.261s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.261s]       |                   [32m[Kros2_interfaces[m[K
+[3.261s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:25:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.261s]    25 |   rclcpp::Service<acfr_ros2_interfaces::srv::AddTwoInts[01;31m[K>[m[K::SharedPtr service =
+[3.261s]       |                                                        [01;31m[K^[m[K
+[3.261s] [01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:25:69:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[Kservice[m[K’
+[3.261s]    25 |   rclcpp::Service<acfr_ros2_interfaces::srv::AddTwoInts>::SharedPtr [01;31m[Kservice[m[K =
+[3.261s]       |                                                                     [01;31m[K^~~~~~~[m[K
+[3.332s] gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/some_service_client_node.cpp.o] Error 1
+[3.333s] gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/service_client.dir/all] Error 2
+[3.333s] gmake[1]: *** Waiting for unfinished jobs....
+[3.684s] gmake[2]: *** [CMakeFiles/service_server.dir/build.make:76: CMakeFiles/service_server.dir/src/some_service_server_node.cpp.o] Error 1
+[3.684s] gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/service_server.dir/all] Error 2
+[3.728s] gmake[2]: *** [CMakeFiles/action_server.dir/build.make:76: CMakeFiles/action_server.dir/src/fibonaaci_action_server_node.cpp.o] Error 1
+[3.728s] gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/action_server.dir/all] Error 2
+[3.790s] gmake[2]: *** [CMakeFiles/action_client.dir/build.make:76: CMakeFiles/action_client.dir/src/fibonaaci_action_client_node.cpp.o] Error 1
+[3.790s] gmake[1]: *** [CMakeFiles/Makefile2:205: CMakeFiles/action_client.dir/all] Error 2
+[3.951s] [ 61%] [32m[1mLinking CXX executable parameters[0m
+[4.090s] [ 61%] Built target parameters
+[4.454s] [ 66%] [32m[1mLinking CXX executable talker[0m
+[4.562s] [ 72%] [32m[1mLinking CXX executable timer[0m
+[4.602s] [ 72%] Built target talker
+[4.695s] [ 72%] Built target timer
+[7.263s] [ 77%] [32m[1mLinking CXX executable listener[0m
+[7.509s] [ 77%] Built target listener
+[7.510s] gmake: *** [Makefile:146: all] Error 2
+[7.512s] Invoked command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg' returned '2': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/template_ws/workspace_1/build/ros2_template_pkg -- -j16 -l16

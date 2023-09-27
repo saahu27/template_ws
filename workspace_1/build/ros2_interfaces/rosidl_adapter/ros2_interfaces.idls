@@ -1,0 +1,3 @@
+/workspaces/template_ws/workspace_1/build/ros2_interfaces/rosidl_adapter/ros2_interfaces:msg/Num.idl
+/workspaces/template_ws/workspace_1/build/ros2_interfaces/rosidl_adapter/ros2_interfaces:srv/AddTwoInts.idl
+/workspaces/template_ws/workspace_1/build/ros2_interfaces/rosidl_adapter/ros2_interfaces:action/Fibonacci.idl

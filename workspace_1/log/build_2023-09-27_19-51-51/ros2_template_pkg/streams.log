@@ -1,0 +1,43 @@
+[0.035s] Invoking command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/template_ws/workspace_1/ros2_template_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/template_ws/workspace_1/install/ros2_template_pkg
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.105s] -- The CXX compiler identification is GNU 11.4.0
+[0.109s] -- Detecting C compiler ABI info
+[0.155s] -- Detecting C compiler ABI info - done
+[0.160s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.160s] -- Detecting C compile features
+[0.160s] -- Detecting C compile features - done
+[0.162s] -- Detecting CXX compiler ABI info
+[0.213s] -- Detecting CXX compiler ABI info - done
+[0.218s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.218s] -- Detecting CXX compile features
+[0.218s] -- Detecting CXX compile features - done
+[0.220s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.337s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.398s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.428s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.431s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.438s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.452s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.469s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.523s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.526s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.598s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.619s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.657s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Looking for pthread.h
+[0.711s] -- Looking for pthread.h - found
+[0.711s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.760s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.760s] -- Found Threads: TRUE  
+[0.878s] -- Found rclcpp_action: 16.0.6 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.943s] -- Found ros2_interfaces: 0.0.0 (/workspaces/template_ws/workspace_1/install/ros2_interfaces/share/ros2_interfaces/cmake)
+[0.978s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.978s]   ament_target_dependencies() the passed package name 'acfr_ros2_interfaces'
+[0.978s]   was not found before
+[0.978s] Call Stack (most recent call first):
+[0.978s]   CMakeLists.txt:21 (ament_target_dependencies)
+[0.978s] 
+[0.978s] [0m
+[0.979s] -- Configuring incomplete, errors occurred!
+[0.979s] See also "/workspaces/template_ws/workspace_1/build/ros2_template_pkg/CMakeFiles/CMakeOutput.log".
+[0.985s] Invoked command in '/workspaces/template_ws/workspace_1/build/ros2_template_pkg' returned '1': AMENT_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/template_ws/workspace_1/install/ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/template_ws/workspace_1/ros2_template_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/template_ws/workspace_1/install/ros2_template_pkg

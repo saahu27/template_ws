@@ -1,0 +1,66 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 16.0.6 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found ros2_interfaces: 0.0.0 (/workspaces/template_ws/workspace_1/install/ros2_interfaces/share/ros2_interfaces/cmake)
+-- Found ament_cmake_copyright: 0.12.8 (/opt/ros/humble/share/ament_cmake_copyright/cmake)
+-- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_lint_cmake: 0.12.8 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)
+-- Found ament_cmake_xmllint: 0.12.8 (/opt/ros/humble/share/ament_cmake_xmllint/cmake)
+-- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/template_ws/workspace_1/build/ros2_template_pkg
+[ 27%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/some_service_client_node.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker_node.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/fibonaaci_action_client_node.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/service_server.dir/src/some_service_server_node.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/fibonaaci_action_server_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ros2_template_node.dir/src/ros2_template_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/parameters.dir/src/parameters_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/timer.dir/src/timer_node.cpp.o[0m
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_server_node.cpp:34:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/action/fibonacci.hpp: No such file or directory
+   34 | #include [01;31m[K"acfr_ros2_interfaces/action/fibonacci.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/action_server.dir/build.make:76: CMakeFiles/action_server.dir/src/fibonaaci_action_server_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/action_server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/fibonaaci_action_client_node.cpp:37:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/action/fibonacci.hpp: No such file or directory
+   37 | #include [01;31m[K"acfr_ros2_interfaces/action/fibonacci.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/action_client.dir/build.make:76: CMakeFiles/action_client.dir/src/fibonaaci_action_client_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:205: CMakeFiles/action_client.dir/all] Error 2
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_client_node.cpp:35:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/srv/add_two_ints.hpp: No such file or directory
+   35 | #include [01;31m[K"acfr_ros2_interfaces/srv/add_two_ints.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/some_service_client_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/service_client.dir/all] Error 2
+[01m[K/workspaces/template_ws/workspace_1/ros2_template_pkg/src/some_service_server_node.cpp:32:10:[m[K [01;31m[Kfatal error: [m[Kacfr_ros2_interfaces/srv/add_two_ints.hpp: No such file or directory
+   32 | #include [01;31m[K"acfr_ros2_interfaces/srv/add_two_ints.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[ 55%] [32m[1mLinking CXX executable ros2_template_node[0m
+gmake[2]: *** [CMakeFiles/service_server.dir/build.make:76: CMakeFiles/service_server.dir/src/some_service_server_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/service_server.dir/all] Error 2
+[ 55%] Built target ros2_template_node
+[ 61%] [32m[1mLinking CXX executable parameters[0m
+[ 61%] Built target parameters
+[ 66%] [32m[1mLinking CXX executable talker[0m
+[ 72%] [32m[1mLinking CXX executable timer[0m
+[ 72%] Built target talker
+[ 72%] Built target timer
+[ 77%] [32m[1mLinking CXX executable listener[0m
+[ 77%] Built target listener
+gmake: *** [Makefile:146: all] Error 2
