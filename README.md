@@ -27,4 +27,4 @@ Open this folder in Vs code and press 'ctrl + Shft + B'. select rebuild and reop
 
 ## Setup Dependencies
 
-once you are inside the DevContainer (see bottom left of VS code), press `ctrl + Shft + B` choose setup dependencies. This currently sources the dependencies for the aprs_ws. you can change that to take an argument and choose ws.
+once you are inside the DevContainer (see bottom left of VS code), press `ctrl + Shft + B` 
